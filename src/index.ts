@@ -1,6 +1,6 @@
 import { tool } from "@opencode-ai/plugin"
 
-export default tool({
+export const finish = tool({
   description: "Finish the current task with a summary and success status",
   args: {
     summary: tool.schema.string().describe("A detailed summary or answer to a question depending on the task"),
